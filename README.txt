@@ -1,12 +1,7 @@
-Charles Antoine Malenfant (0616332)
-CS444 - Spring 2019
-Grid Assignment
-
 FILE GUIDE
 
 This assignment has a total of 5 files including this README.txt file. The first one, gridapp.c contains the
-source code for the assignment and all necessary changes are clearly and thoroughly commented directly in the
-code directly.
+source code.
 
 The second file, gridAssignment_data is an Excel spreadsheet with five tabs containing all the raw data from
 the 228 tests ran. The first four tab, NONE, CELL, ROW, and GRID aggregate the raw data by type of locking
@@ -21,15 +16,8 @@ The writeup starts with a description of the locking and deadlock prevention str
 For each locking granularity, a depiction of the strategy is given along with its deadlock prevention approach,
 if needed. The next five pages comprise all of the necessary graphs used in the analysis of the test results.
 Each graph is defined clearly. The last part is the analysis and every part of the analysis is self-explanatory.
-Questions that were in green font on the assignment description at: https://people.clarkson.edu/~jmatthew/os/assignments/grid/index.html
-are in a dark blue font in the analysis section of the writeup.
 
 The fourth file is the makefile used to build and compile the gridapp.c file.
-
-EXTRAS
-
-I did not implement any extra features in the gridapp.c file per say but you may have noted that I was extremely
-thorough in my analysis, graphs, material in general. It is for you to judge if this is worthy of extra credit.
 
 BUGS AND POSSIBLE IMPROVEMENTS
 
@@ -52,10 +40,3 @@ to the directory containing the gridapp.c file and the makefile. Run the followi
 
 $ make gridapp
 $ ./gridapp gridsize thread_count -granularity
-
-NOTES AND COMMENTS
-
-Please note that all of my tests were run on the opsys.clarkson.edu server. Although I am close to 100% certain
-that this did not skew my results, I thought I would mention it. My tests were also run with my code having
-some print statements that have since been removed. I did this because I liked to see the progression of the
-execution of the threads.
